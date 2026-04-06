@@ -12,7 +12,9 @@ body {
 }
 
 header {
-  display: flex;  
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
   color:#CAD178;
   height: 70px;
   background-color: #434960;
@@ -39,12 +41,40 @@ header {
   display: none;
 }
 
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .nav-primary .menu-item:hover {
   text-decoration: underline;
 }
 
 .nav-text {
   display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside > nav {
+  display: flex;
+  flex-direction: column;
 }
 
 aside {
@@ -71,3 +101,5 @@ a:hover {
   cursor: pointer;
   opacity: 0.9;
 }
+
+/* Continuar Media Querys */
