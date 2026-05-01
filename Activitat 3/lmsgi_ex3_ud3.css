@@ -139,3 +139,21 @@ main {
 img[alt="art"]{
   width: 100%;
 }
+
+@media (min-width: 768px) {
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+
+  .card.large {
+    grid-column: span 2;
+  }
+
+  .card.extralarge {
+    grid-column: span 3;
+  }
+
+}

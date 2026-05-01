@@ -102,4 +102,25 @@ a:hover {
   opacity: 0.9;
 }
 
-/* Continuar Media Querys */
+@media (min-width: 768px) {
+  .products-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-square {
+    display: block;
+  }  
+
+  .logo-landscape {
+    display: none;
+  }
+
+  .nav-text {
+    display: block;
+  }
+
+}
